@@ -9,7 +9,26 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'cherryswash': ['Cherry Swash'], 
+        'metamorphous': ['Metamorphous'], 
+        'darkergrotesque': ['Darker Grotesque'], 
+      },
+    },
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      primary: {
+        DEFAULT: '#F28482',
+        25: '#F5F8FF',
+        50: '#FFFFFF',
+      },
+      neutral: {
+        DEFAULT: '#FCFCFD',
+        50: '#787785',
+      }
+    }
   },
   plugins: [],
 }
