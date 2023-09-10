@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -21,7 +22,10 @@ const Navbar = () => {
         }
     }
     
-    window.addEventListener('scroll', changeNavbarBackground);
+    if (typeof window !== "undefined") {
+        window.addEventListener('scroll', changeNavbarBackground);
+     }
+    
 
     return ( 
         <div className={`w-full fixed ${navBackgroundVisible ? "bg-[url('/assets/bg-hero-section.png')] bg-no-repeat bg-right-top bg-cover" : ""}`}>

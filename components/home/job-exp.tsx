@@ -1,6 +1,6 @@
 const JobExperience = () => {
     return ( 
-        <section className="flex justify-between max-w-[1440px] mx-auto px-5">
+        <section className="flex justify-between">
             <div className="flex flex-col items-center py-[100px]">
                 <h2 className="font-cherryswash text-[90px] text-primary leading-[112px]">Job Experience</h2>
                 <p className="font-darkergrotesque text-2xl py-5 text-center mt-[50px]">
