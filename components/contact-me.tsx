@@ -14,8 +14,8 @@ export type FormData = {
 const ContactMe: FC = () => {
     const { register, handleSubmit } = useForm<FormData>();
     const labelClass = `mb-1.5 block subheading-lg-md font-darkergrotesque text-black`;
-    const inputClass = `w-full rounded-3xl border-transparent bg-white py-3 px-4 subheading-lg-regular 
-    font-darkergrotesque text-gray-700 outline-none focus:border-purple-500 focus:shadow-md`;
+    const inputClass = `w-full rounded-3xl border-none bg-white py-3 px-4 subheading-lg-regular font-darkergrotesque 
+    text-gray-700 outline-none focus:border-primary-200 focus:outline-none focus:ring-0 focus:shadow-md`;
 
     function onSubmit(data: FormData) {
         sendEmail(data);
@@ -33,7 +33,7 @@ const ContactMe: FC = () => {
                         <input
                         type='text'
                         placeholder='Full Name'
-                        className={inputClass}
+                        className={`${inputClass} capitalize`}
                         {...register('name', { required: true })}
                         />
                     </div>
@@ -42,7 +42,7 @@ const ContactMe: FC = () => {
                         htmlFor='email'
                         className={labelClass}
                         >
-                        Email Address:
+                            Email Address:
                         </label>
                         <input
                         type='email'
@@ -56,10 +56,10 @@ const ContactMe: FC = () => {
                         htmlFor='subject'
                         className={labelClass}
                         >
-                        Subject:
+                            Subject:
                         </label>
                         <input
-                        type='subject'
+                        type='text'
                         placeholder='Subject'
                         className={inputClass}
                         {...register('subject', { required: true })}
@@ -70,7 +70,7 @@ const ContactMe: FC = () => {
                         htmlFor='message'
                         className={labelClass}
                         >
-                        Message:
+                            Message:
                         </label>
                         <textarea
                         rows={4}
