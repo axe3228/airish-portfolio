@@ -1,7 +1,7 @@
-import Hero from "@/components/home/hero";
-import JobExperience from "@/components/home/job-exp";
-import BannerPortfolio from "@/components/home/banner_portfolio";
-import HomeAboutMe from "@/components/home/about_me";
+import Hero from "@/components/hero";
+import JobExperience from "@/components/job-exp";
+import BannerPortfolio from "@/components/banner_portfolio";
+import HomeAboutMe from "@/components/about_me";
 
 
 const Home = () => {

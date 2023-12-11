@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import PinkButton from '../buttons/pink_button';
+import PinkButton from './buttons/pink_button';
 
 const HomeAboutMe = () => {
     return ( 
