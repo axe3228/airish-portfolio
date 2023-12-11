@@ -28,6 +28,7 @@ module.exports = {
         50: '#FFFFFF',
         75: '#EAABAD',
         100: '#FBF7F0',
+        200: '#FDEBEB',
       },
       neutral: {
         DEFAULT: '#FCFCFD',
