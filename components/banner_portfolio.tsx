@@ -17,9 +17,6 @@ const BannerPortfolio = () => {
                 <Image height={307} width={920} className='mb-9'
                 src={'/images/home/banner-5.png'} alt="banner-3" />
             </div>
-            <div className='mt-[42px]'>
-                <PinkButton title={'More'}/>
-            </div>
         </section>
     );
 }
