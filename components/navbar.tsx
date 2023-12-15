@@ -1,13 +1,12 @@
 
 import { useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
 
 const NavLinks = (item: any) => (
     <div className="mx-[45px]">
-        <Link href={item.href} passHref>
+        <a href={item.href}>
             <button className="text-neutral-50 font-medium">{item.title}</button>
-        </Link>
+        </a>
     </div>
 );
 
@@ -32,10 +31,10 @@ const Navbar = () => {
             <div className="flex justify-between py-[15px] px-5 max-w-[1440px] mx-auto">
                 <div><Image src="/assets/LOGO.png" width={100} height={75} alt={`site logo`}/></div>
                 <div className="flex items-center">
-                    <NavLinks title={`HOME`} href={`/`}/>
-                    <NavLinks title={`ABOUT`} href={`/about`}/>
-                    <NavLinks title={`PORTFOLIO`} href={`/`}/>
-                    <NavLinks title={`CONTACT`} href={`/`}/>
+                    <NavLinks title={`HOME`} href={`#home`}/>
+                    <NavLinks title={`ABOUT`} href={`#about`}/>
+                    <NavLinks title={`PORTFOLIO`} href={`#portfolio`}/>
+                    <NavLinks title={`CONTACT`} href={`#contact`}/>
                 </div>
             </div>
         </div>
