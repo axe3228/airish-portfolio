@@ -57,3 +57,11 @@ body {
 .back {
   -webkit-transform: rotateY(180deg);
 }
+
+.slick-prev, .slick-next {
+  display: none !important;
+}
+
+.slick-slider.slick-initialized {
+  padding-bottom: 20px;
+}

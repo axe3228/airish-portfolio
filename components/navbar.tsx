@@ -28,7 +28,7 @@ const Navbar = () => {
     
 
     return ( 
-        <div className={`w-full fixed ${navBackgroundVisible ? "bg-[url('/assets/bg-hero-section.png')] bg-no-repeat bg-right-top bg-cover" : ""}`}>
+        <div className={`w-full fixed z-10 ${navBackgroundVisible ? "bg-[url('/assets/bg-hero-section.png')] bg-no-repeat bg-right-top bg-cover" : ""}`}>
             <div className="flex justify-between py-[15px] px-5 max-w-[1440px] mx-auto">
                 <div><Image src="/assets/LOGO.png" width={100} height={75} alt={`site logo`}/></div>
                 <div className="flex items-center">
